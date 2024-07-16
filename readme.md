@@ -2,11 +2,11 @@
 
 ## What are Callbacks?
 
-\*\*Callbacks are used to make asynchrounous codes work in a synchronous way.
+**Callbacks are used to make asynchrounous codes work in a synchronous way.
 Callbacks are mostly used in code where the remaining code rely on the
 asynchronous operations' data. For example if a code to be executed after
 getting data from a API call or by executing another timer after a existing
-timer ends.
+timer ends.**
 
 ## What is Callback Hell?
 
