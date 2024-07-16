@@ -1,0 +1,73 @@
+.pill {
+  min-width: 100px;
+  height: 100px;
+  /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* color: white; */
+}
+
+.countdown {
+  position: relative;
+  min-width: 60%;
+  padding: 2rem;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  /* background-color: antiquewhite; */
+  color: white;
+  z-index: 1;
+}
+.countdown::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    #c31432,
+    #c94b4b,
+    #4b134f,
+    #240b36
+  );
+  background-size: 400%;
+
+  animation: counts 600ms 20 alternate;
+  transition: transform 900ms, background-position 1000ms;
+  z-index: -1;
+}
+
+.newyear {
+}
+
+@keyframes counts {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes new {
+  0% {
+    transform: scale(0);
+    background-size: 400%;
+  }
+
+  50% {
+    transform: scale(0.5);
+    background-size: 200%;
+  }
+
+  100% {
+    transform: scale(1);
+    background-size: 100%;
+  }
+}
