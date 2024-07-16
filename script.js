@@ -21,7 +21,7 @@ setTimeout(() => {
                 setTimeout(() => {
                   count.innerHTML = 1;
                   setTimeout(() => {
-                    count.classList.remove("count");
+                    count.classList.remove("countdown");
                     count.classList.add("newyear");
                     count.innerHTML = "Happy New Year";
                   }, 1000);
